@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Submission Sanity Check",
+    "description": "Small extension to quickly and conveniently make sure I submitted all my assignments",
+    "version": "1.0",
+    "icons": {
+      "16": "icon16.PNG",
+      "32": "icon32.PNG",
+      "48": "icon48.PNG",
+      "128": "icon128.PNG"
+    },
+    "host_permissions": [
+        "https://canvas.uchicago.edu/"
+    ],
+    "action": {
+      "default_popup": "index.html"
+    }
+  }

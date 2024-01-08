@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <template id="assignment-temp">
+            <div class="assignment-info">
+                <a class="assignment-name" target="_blank" href=""></a>
+                <img class="assignment-status-icon" src="" />
+            </div>
+        </template>
+        <div id="tabs-container">
+            <button id="button-missing" class="tab-button active">Missing</button>
+            <button id="button-submitted" class="tab-button">Submitted</button>
+        </div>
+        <div id="tab-content">
+            <div id="content-missing" style="display: block;">
+                <h2>Missing</h2>
+                <p class="loading-text">Loading assignments...</p>
+            </div>
+            <div id="content-submitted">
+                <h2>Submitted</h2>
+                <p class="loading-text">Loading assignments...</p>
+            </div>
+        </div>
+        <script src="utils.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

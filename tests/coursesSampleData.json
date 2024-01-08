@@ -1,0 +1,168 @@
+[
+    {
+        "id": 41583,
+        "name": "ARTH 17190 1 (Spring 2022) Art, Science, and Modern Media",
+        "account_id": 154,
+        "uuid": "KWvnL0gQdtrDgTp62h0KqQ6i65HWOKSiHTgysxxQ",
+        "start_at": "2022-03-04T00:53:43Z",
+        "grading_standard_id": null,
+        "is_public": false,
+        "created_at": "2022-03-03T22:36:26Z",
+        "course_code": "ARTH 17190 1 Art, Science, and Modern Media",
+        "default_view": "syllabus",
+        "root_account_id": 1,
+        "enrollment_term_id": 217,
+        "license": "private",
+        "grade_passback_setting": null,
+        "end_at": null,
+        "public_syllabus": false,
+        "public_syllabus_to_auth": false,
+        "storage_quota_mb": 2000,
+        "is_public_to_auth_users": false,
+        "homeroom_course": false,
+        "course_color": null,
+        "friendly_name": null,
+        "term": {
+            "id": 217,
+            "name": "2022.02",
+            "start_at": null,
+            "end_at": null,
+            "created_at": "2021-01-28T17:11:48Z",
+            "workflow_state": "active",
+            "grading_period_group_id": null
+        },
+        "apply_assignment_group_weights": false,
+        "calendar": {
+            "ics": "https://canvas.uchicago.edu/feeds/calendars/course_KWvnL0gQdtrDgTp62h0KqQ6i65HWOKSiHTgysxxQ.ics"
+        },
+        "time_zone": "America/Chicago",
+        "blueprint": false,
+        "template": false,
+        "enrollments": [
+            {
+                "type": "student",
+                "role": "StudentEnrollment",
+                "role_id": 4,
+                "user_id": 168163,
+                "enrollment_state": "active",
+                "limit_privileges_to_course_section": false
+            }
+        ],
+        "hide_final_grades": false,
+        "workflow_state": "available",
+        "course_format": "on_campus",
+        "restrict_enrollments_to_course_dates": false,
+        "overridden_course_visibility": ""
+    },
+    {
+        "id": 36928,
+        "name": "BIOS 10500 1 (Autumn 2021) Metabolism and Exercise",
+        "account_id": 87,
+        "uuid": "mteP7PhtNLZ0griY67EvXf6Y77ANy23tyCd9wcMm",
+        "start_at": "2021-09-16T16:48:44Z",
+        "grading_standard_id": null,
+        "is_public": false,
+        "created_at": "2021-08-19T23:16:11Z",
+        "course_code": "BIOS 10500 1 Metabolism and Exercise",
+        "default_view": "wiki",
+        "root_account_id": 1,
+        "enrollment_term_id": 114,
+        "license": "private",
+        "grade_passback_setting": null,
+        "end_at": null,
+        "public_syllabus": false,
+        "public_syllabus_to_auth": true,
+        "storage_quota_mb": 2000,
+        "is_public_to_auth_users": false,
+        "homeroom_course": false,
+        "course_color": null,
+        "friendly_name": null,
+        "term": {
+            "id": 114,
+            "name": "2021.04",
+            "start_at": null,
+            "end_at": null,
+            "created_at": "2019-10-29T19:17:44Z",
+            "workflow_state": "active",
+            "grading_period_group_id": null
+        },
+        "apply_assignment_group_weights": true,
+        "calendar": {
+            "ics": "https://canvas.uchicago.edu/feeds/calendars/course_mteP7PhtNLZ0griY67EvXf6Y77ANy23tyCd9wcMm.ics"
+        },
+        "time_zone": "America/Chicago",
+        "blueprint": false,
+        "template": false,
+        "enrollments": [
+            {
+                "type": "student",
+                "role": "StudentEnrollment",
+                "role_id": 4,
+                "user_id": 168163,
+                "enrollment_state": "active",
+                "limit_privileges_to_course_section": false
+            }
+        ],
+        "hide_final_grades": false,
+        "workflow_state": "available",
+        "restrict_enrollments_to_course_dates": false,
+        "overridden_course_visibility": ""
+    },
+    {
+        "id": 39738,
+        "access_restricted_by_date": true
+    },
+    {
+        "id": 52720,
+        "name": "CMSC 22100 1 (Autumn 2023) Programming Languages",
+        "account_id": 302,
+        "uuid": "x1we53Dsiy6EkA3rFYBfB8oMmTbjsBu4RxUPL47j",
+        "start_at": null,
+        "grading_standard_id": null,
+        "is_public": false,
+        "created_at": "2023-09-26T15:12:00Z",
+        "course_code": "CMSC 22100 1 Programming Languages",
+        "default_view": "syllabus",
+        "root_account_id": 1,
+        "enrollment_term_id": 223,
+        "license": "private",
+        "grade_passback_setting": null,
+        "end_at": null,
+        "public_syllabus": false,
+        "public_syllabus_to_auth": true,
+        "storage_quota_mb": 2000,
+        "is_public_to_auth_users": false,
+        "homeroom_course": false,
+        "course_color": null,
+        "friendly_name": null,
+        "term": {
+            "id": 223,
+            "name": "2023.04",
+            "start_at": null,
+            "end_at": null,
+            "created_at": "2022-04-12T14:44:09Z",
+            "workflow_state": "active",
+            "grading_period_group_id": null
+        },
+        "apply_assignment_group_weights": false,
+        "calendar": {
+            "ics": "https://canvas.uchicago.edu/feeds/calendars/course_x1we53Dsiy6EkA3rFYBfB8oMmTbjsBu4RxUPL47j.ics"
+        },
+        "time_zone": "America/Chicago",
+        "blueprint": false,
+        "template": false,
+        "enrollments": [
+            {
+                "type": "student",
+                "role": "StudentEnrollment",
+                "role_id": 4,
+                "user_id": 168163,
+                "enrollment_state": "active",
+                "limit_privileges_to_course_section": false
+            }
+        ],
+        "hide_final_grades": false,
+        "workflow_state": "available",
+        "restrict_enrollments_to_course_dates": false
+    }
+]
