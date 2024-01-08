@@ -7,4 +7,6 @@ Through it, I practiced JS testing frameworks such as Jest as well as reading do
 <p align=center>
   Popup Demonstration
 </p>
-![Submissions Check](https://github.com/albanezla08/submissions-check/assets/102559347/a67f6596-5164-437b-8ac8-0c9ce1d8dbe7)
+<p align=center>
+  <img src="https://github.com/albanezla08/submissions-check/assets/102559347/a67f6596-5164-437b-8ac8-0c9ce1d8dbe7" alt="assignments load in missing tab" />
+</p>
