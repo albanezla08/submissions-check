@@ -15,22 +15,22 @@ function checkAndRespondForError(fetchResponse) {
 }
 
 async function updateAssignments() {
-    const coursesUrl = utils.baseUrl + "courses.json?include[]=term&per_page=100";
-    const coursesResponse = await utils.fetchUrl(coursesUrl);
+    const coursesUrl = functions.baseUrl + "courses.json?include[]=term&per_page=100";
+    const coursesResponse = await functions.fetchUrl(coursesUrl);
     checkAndRespondForError(coursesResponse);
     const coursesData = coursesResponse.json;
-    const currentQuarterName = utils.getCurrentQuarter();
+    const currentQuarterName = functions.getCurrentQuarter();
     let currentAssignments = [];
     for (const course of coursesData) {
-        if (utils.checkCourseIsInQuarter(course, currentQuarterName)) {
-            const url = utils.calcAssignmentsUrl(course);
-            const assignmentsResponse = await utils.fetchUrl(url);
+        if (functions.checkCourseIsInQuarter(course, currentQuarterName)) {
+            const url = functions.calcAssignmentsUrl(course);
+            const assignmentsResponse = await functions.fetchUrl(url);
             checkAndRespondForError(assignmentsResponse);
             const assignmentsData = assignmentsResponse.json;
             currentAssignments = currentAssignments.concat(assignmentsData);
         }
     }
-    const { submitted, unsubmitted } = utils.categorizeBySubmitted(currentAssignments);
+    const { submitted, unsubmitted } = functions.categorizeBySubmitted(currentAssignments);
     const submittedContainer = document.getElementById('content-submitted');
     const unsubmittedContainer = document.getElementById('content-missing');
     const template = document.getElementById('assignment-temp');

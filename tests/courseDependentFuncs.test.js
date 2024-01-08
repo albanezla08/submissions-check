@@ -1,4 +1,4 @@
-const utils = require('../src/utils');
+const functions = require('../src/functional');
 const coursesSampleData = require('./coursesSampleData.json');
 const assignmentsUrl = /^(https:\/\/canvas.uchicago.edu\/api\/v1\/courses\/\d{5}\/assignments\?include\[\]=submission&per_page=100)$/;
 const winterQuarterName = '2023.01';
@@ -9,7 +9,7 @@ const autumnQuarterName = '2023.04';
 function expectCourseInQuarters(course, winterResult,
     springResult, summerResult, autumnResult) {
         const checkQuarter =
-            quarterName => utils.checkCourseIsInQuarter(course, quarterName);
+            quarterName => functions.checkCourseIsInQuarter(course, quarterName);
         expect(checkQuarter(winterQuarterName)).toBe(winterResult);
         expect(checkQuarter(springQuarterName)).toBe(springResult);
         expect(checkQuarter(summerQuarterName)).toBe(summerResult);
@@ -32,24 +32,24 @@ describe('checkCourseInQuarter', () => {
         const course = coursesSampleData[3];
         expect(course).not.toHaveProperty('access_restricted_by_date');
         expect(course.term.name).toBe('2023.04');
-        expect(utils.checkCourseIsInQuarter(course, '2023.05')).toBe(false);
+        expect(functions.checkCourseIsInQuarter(course, '2023.05')).toBe(false);
     });
 });
 
 describe('calcAssignmentsUrl', () => {
     test('valid course ID returns valid URL', () => {
         const course = coursesSampleData[3];
-        const url = utils.calcAssignmentsUrl(course);
+        const url = functions.calcAssignmentsUrl(course);
         expect(assignmentsUrl.test(url)).toBe(true);
     });
     test('invalid course ID returns invalid URL', () => {
         const course = { id: 1234 };
-        const url = utils.calcAssignmentsUrl(course);
+        const url = functions.calcAssignmentsUrl(course);
         expect(assignmentsUrl.test(url)).toBe(false);
     });
     test('undefined course ID returns null', () => {
         const course = { name: 'Fake Class' };
-        const url = utils.calcAssignmentsUrl(course);
+        const url = functions.calcAssignmentsUrl(course);
         expect(assignmentsUrl.test(url)).toBe(false);
         expect(url).toBe(null);
     });

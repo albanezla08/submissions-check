@@ -1,4 +1,4 @@
-const utils = {
+const functions = {
     baseUrl: "https://canvas.uchicago.edu/api/v1/",
     fetchUrl: async function (url) {
         try {
@@ -46,7 +46,7 @@ const utils = {
         if (courseId === undefined) {
             return null;
         }
-        return utils.baseUrl + 'courses/' + courseId.toString() +
+        return functions.baseUrl + 'courses/' + courseId.toString() +
             '/assignments?include[]=submission&per_page=100';
     },
     checkCanBeSubmitted: function (assignment) {
@@ -70,10 +70,10 @@ const utils = {
         const submittedAssignments = [];
         const unsubmittedAssignments = [];
         for (const assignment of assignments) {
-            if (!utils.checkCanBeSubmitted(assignment)) {
+            if (!functions.checkCanBeSubmitted(assignment)) {
                 continue;
             }
-            if (utils.checkIsAlreadySubmitted(assignment)) {
+            if (functions.checkIsAlreadySubmitted(assignment)) {
                 submittedAssignments.push(assignment);
             } else {
                 unsubmittedAssignments.push(assignment);
@@ -84,5 +84,5 @@ const utils = {
 };
 
 if (typeof module === 'object') {
-    module.exports = utils;
+    module.exports = functions;
 }

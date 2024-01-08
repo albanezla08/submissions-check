@@ -1,4 +1,4 @@
-const utils = require('../src/utils');
+const utils = require('../src/functional');
 const coursesSampleData = require('./coursesSampleData.json');
 const coursesUrl = 'https://canvas.uchicago.edu/api/v1/courses?include[]=term&per_page=100';
 const assignemntsSampleData = require('./assignmentsSampleData.json');
